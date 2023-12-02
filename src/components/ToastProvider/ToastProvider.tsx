@@ -38,6 +38,21 @@ export default function ToastProvider({
     setToastMessages(toastMessages.filter((message) => message.id !== id));
   }
 
+  React.useEffect(() => {
+    function handleEscape(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        console.log("escape!");
+        setToastMessages([]);
+      }
+    }
+
+    window.addEventListener("keydown", handleEscape);
+
+    return () => {
+      window.removeEventListener("keydown", handleEscape);
+    };
+  }, []);
+
   return (
     <ToastContext.Provider
       value={{

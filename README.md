@@ -202,8 +202,8 @@ That way, we aren't interrupting the user. They can read the messages in their o
 
 **Acceptance Criteria:**
 
-- Hitting the "Escape" key should dismiss all toasts
-- You'll want to do this with a `useEffect` hook, but it's up to you to decide which component should bear this responsibility.
+- [x] Hitting the "Escape" key should dismiss all toasts
+- [x] You'll want to do this with a `useEffect` hook, but it's up to you to decide which component should bear this responsibility.
 
 ### 5.2: Screen reader users
 
@@ -254,10 +254,10 @@ Let's imagine we reach out to an accessibility specialist, and they do us the fa
 
 **Acceptance Criteria:**
 
-- The `<ol>` should have the specified role / aria tags
-- The toast's content should be prefixed with the variant, using the `VisuallyHidden` component.
+- [x] The `<ol>` should have the specified role / aria tags
+- [x] The toast's content should be prefixed with the variant, using the `VisuallyHidden` component.
   - _NOTE:_ The diff above shows an _error_ toast, but the prefix should be dynamic, based on the variant.
-- The “Dismiss message” content in the close button should be moved to an `aria-label`. `aria-live` should also be set to "off".
+- [x] The “Dismiss message” content in the close button should be moved to an `aria-label`. `aria-live` should also be set to "off".
 
 ---
 
