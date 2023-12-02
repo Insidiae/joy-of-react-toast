@@ -59,9 +59,9 @@ Our `Toast` component should support 4 different variants:
 
 **Acceptance Criteria:**
 
-- The “Message” textarea should be driven by React state
-- Using the data in the `VARIANT_OPTIONS` array, render 4 radio buttons within the “Variant” row. They should all be part of the same group (so that only one can be selected at a time). They should also be driven by React state.
-- There should be no key warnings in the console.
+- [x] The “Message” textarea should be driven by React state
+- [x] Using the data in the `VARIANT_OPTIONS` array, render 4 radio buttons within the “Variant” row. They should all be part of the same group (so that only one can be selected at a time). They should also be driven by React state.
+- [x] There should be no key warnings in the console.
 
 ---
 
