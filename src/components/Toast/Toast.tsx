@@ -1,4 +1,3 @@
-import React from "react";
 import {
   AlertOctagon,
   AlertTriangle,
@@ -8,7 +7,7 @@ import {
 } from "react-feather";
 
 import VisuallyHidden from "../VisuallyHidden";
-import { VARIANT_OPTIONS } from "../../utils";
+import { VARIANT_OPTIONS } from "../ToastProvider";
 
 import styles from "./Toast.module.css";
 
